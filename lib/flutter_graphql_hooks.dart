@@ -3,6 +3,9 @@ library flutter_graphql_hooks;
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+export 'package:flutter_graphql_hooks/flutter_graphql_hooks.dart';
+export 'package:graphql_flutter/graphql_flutter.dart';
+
 GraphQLClient useGraphQLClient() {
   var context = useContext();
   return GraphQLProvider.of(context).value;
